@@ -181,7 +181,7 @@ function displayBoard(opts) {
 
   // Given we want our row's to display sequentially
   // we have to go into a bit of promise-callback hell 
-  // in order to get desired effect
+  // in order to get desired effect.
 
   bot.replyAsync(message, `${opts.board.current_move_user_name} your move`)
   	.then(() => {

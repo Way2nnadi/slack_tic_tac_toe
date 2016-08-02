@@ -7,6 +7,6 @@ module.exports = {
 		clientSecret: config.slack['client-secret'],
 		redirectUri: config.slack['redirect-uri'],
 		scopes: ['bot', 'channels:write', 'channels:read', 'chat:write:bot', 'chat:write:user', 'im:write'],
-		storage: '',
+		storage: ''
 	}
 }

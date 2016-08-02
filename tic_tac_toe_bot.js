@@ -397,6 +397,8 @@ slackbot.on('slash_command', (bot, message) => {
 				}
 			}
 
+
+
 		} else if (message.command === '/display_board') {
 			var board = channel.board;
 

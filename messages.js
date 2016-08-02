@@ -1,6 +1,6 @@
 function challenge_sent(opts) {
 	return {
-	  "text": "Challenge sent ->",
+	  "text": "Challenge sent -->",
 	  "attachments": [
 	      {
           "text": `You have challenged ${opts.opponent}. Waiting for them to accept the challenge`,

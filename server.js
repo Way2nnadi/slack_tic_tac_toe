@@ -13,4 +13,4 @@ server.listen(server.get('port'), () => {
 	console.log('Listening on Port:' + server.get('port'));
 })
 
-module.exports = server;	
+module.exports = server;
