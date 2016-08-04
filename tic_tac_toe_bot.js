@@ -204,26 +204,25 @@ slackbot.on('interactive_message_callback', (bot, message) => {
 				}
 			});
 
-		}
+			// Given that there can only be a winner after 5 clicks
+			// We should only start reasoning about game winner after the 5th click
+			if (clicks >= 5) {
 
-		// Given that there can only be a winner after 5 clicks
-		// We should only start reasoning about game winner after the 5th click
-		if (clicks >= 5) {
+				var gameStatus = board.game_status
+				var winner = helperFunctions.scanMatrix(gameStatus, channel.playing);
 
-			var gameStatus = board.game_status
-			var winner = helperFunctions.scanMatrix(gameStatus, channel.playing);
+				if (winner || (clicks === 9 && !winner)) {
+					board.winner = winner || 'No one';
 
-			if (winner || (clicks === 9 && !winner)) {
-				board.winner = winner || 'No one';
-
-				// Trigger end game command
-				helperFunctions.triggerSlashCommand({
-					command: '/end_game',
-					team_id: message.team.id,
-					user_id: message.user,
-					channel_id: message.channel,
-					text: 'natural end'
-				})
+					// Trigger end game command
+					helperFunctions.triggerSlashCommand({
+						command: '/end_game',
+						team_id: message.team.id,
+						user_id: message.user,
+						channel_id: message.channel,
+						text: 'natural end'
+					})
+				}
 			}
 		}
 	}
