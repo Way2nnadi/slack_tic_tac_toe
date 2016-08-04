@@ -1,8 +1,8 @@
 {
   "slack": {
-		"token": "xoxp-64633130900-64633130964-66439090290-6f264d07bf",
-		"client-id": "64633130900.64845430064",
-		"client-secret": "f9f8964b9f95997e7b960d6a4c8da96f",
-		"redirect-uri": "https://tic-tac-toe-bot.herokuapp.com/oauth"
+    "token": "your-slack-token",
+    "client-id": "your-slack-client-id",
+    "client-secret": "your-slack-client-secret",
+    "redirect-uri": "your-redirect-uri"
   }
 }
