@@ -52,7 +52,7 @@ function sendGameInvite(opts) {
 function triggerSlashCommand(opts) {
 	rp({
   	method: 'POST',
-	  uri: 'https://b059b3ea.ngrok.io/slack/receive',
+	  uri: 'https://tic-tac-toe-bot.herokuapp.com/slack/receive',
 	  body: {
 	  	command: opts.command,
 	  	team_id: opts.team_id,
