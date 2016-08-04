@@ -1,4 +1,4 @@
-# `Slack_Tic_Tac_Toe_Bot` - A simple way to have fun with your slack teammates
+# `Slack_Tic_Tac_Toe_Bot` - A simple way to have fun with a slack mate
 
 `Slack_Tic_Tac_Toe_Bot` was built leveraging the power of [Botkit](https://github.com/howdyai/botkit/blob/master/readme.md). Special thanks to the Botkit team for building such a reliable tool.
 
@@ -10,7 +10,7 @@ First things first, given that this application is not available on slack you wi
 git@github.com:Way2nnadi/slack_tic_tac_toe.git
 ```
 
-Not all that will need slack creditentials in order for this app to run locally.
+Now, all we'll need is slack creditentials in order for this app to run locally.
 
 ### Getting Credentials
 The [Slack Api](https://api.slack.com) is actually well-documented and walks you, hand in hand, through each necessary step to set up a slack app.
